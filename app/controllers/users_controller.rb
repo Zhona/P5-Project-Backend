@@ -1,15 +1,19 @@
 class UsersController < ApplicationController
     skip_before_action :authorized, only: [:create]
     rescue_from ActiveRecord::RecordInvalid, with: :invalid_credentials
-    def index 
-        users = User.all 
-        render json: users
-    end 
+    
+   #If a user is asmin they can see al the accounts
+    def index
+        if current_user.is_admin
+            render json: User.all, status: :ok
+        else
+            render json: {error: "Not authorized"}, status: 401
+        end
+    end
 
-    def show 
-        user = find_user 
-        render json: user 
-    end 
+    def show
+        render json: { user: UserSerializer.new(current_user) }, status: :accepted
+    end
 
     def create 
         user = User.create!(user_params)
@@ -41,7 +45,7 @@ class UsersController < ApplicationController
     end
 
     def user_params 
-        params.permit(:username, :password, :first_name, :last_name, :email)
+        params.permit(:username, :password, :first_name, :last_name, :email, :is_admin)
     end
 
     def invalid_credentials(error)

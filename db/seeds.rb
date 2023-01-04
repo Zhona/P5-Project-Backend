@@ -7,37 +7,46 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 # CATEGORY
-Category.create!(material: "Vinyl Figure")
-Category.create!(material: "Art Print")
+Category.create!(material: "Red")
+Category.create!(material: "Purple")
+Category.create!(material: "Blue")
 
 # PRODUCTS VINYL FIGURINES
-Product.create!(category_id:1 ,name: "Companion", description: "Kaws x ", image:"https://images.stockx.com/360/KAWS-Companion-2020-Figure-Brown/Images/KAWS-Companion-2020-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1651094078&h=384&q=60", price: 500, color: "Brown" )#1 brown vinyl figruine 
-Product.create!(category_id:1 ,name: "Kin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-Changbai-Mountain-Vinyl-Figure-Brown/Images/KAWS-Holiday-Changbai-Mountain-Vinyl-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1652820875&h=384&q=60", price:500, color: "Brown"  )
-Product.create!(category_id:1 ,name: "Chillin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Brown/Images/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1635259489&h=384&q=60", price:500, color: "Brown" )
-Product.create!(category_id:1 ,name: "Shy", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-UK-Vinyl-Figure-Brown/Images/KAWS-Holiday-UK-Vinyl-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411703&h=384&q=60", price:500 , color: "Brown")
-Product.create!(category_id:1 ,name: "Lonely", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-SINGAPORE-Figure-Brown/Images/KAWS-HOLIDAY-SINGAPORE-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411720&h=384&q=60", price:500, color: "Brown" )#5
-#   t.string :name
-#       t.string :description
-#       t.string :color
-#       t.string :image
-#       t.float :price
-Product.create!(category_id:1 ,name: "Companion", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Companion-2020-Figure-Black/Images/KAWS-Companion-2020-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655490899&h=384&q=60", price:500 , color: "Black")#1 black vinyl figurines 
-Product.create!(category_id:1 ,name: "Kin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-Changbai-Mountain-Vinyl-Figure-Black/Images/KAWS-Holiday-Changbai-Mountain-Vinyl-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1652820860&h=384&q=60", price:500, color: "Black" )
-Product.create!(category_id:1 ,name: "Chillin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Black/Images/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1635178627&h=384&q=60", price: 500, color: "Black")# 3
-Product.create!(category_id:1 ,name: "Shy", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-UK-Vinyl-Figure-Black/Images/KAWS-Holiday-UK-Vinyl-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411712&h=384&q=60", price: 500, color: "Black")
-Product.create!(category_id:1 ,name: "Lonely", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-SINGAPORE-Figure-Black/Images/KAWS-HOLIDAY-SINGAPORE-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411705&h=384&q=60", price:500 , color: "Black")#5
+# Product.create!(category_id:1 ,name: "Companion", description: "Kaws x ", image:"https://images.stockx.com/360/KAWS-Companion-2020-Figure-Brown/Images/KAWS-Companion-2020-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1651094078&h=384&q=60", price: 500, color: "Brown" )#1 brown vinyl figruine 
+# Product.create!(category_id:1 ,name: "Kin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-Changbai-Mountain-Vinyl-Figure-Brown/Images/KAWS-Holiday-Changbai-Mountain-Vinyl-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1652820875&h=384&q=60", price:500, color: "Brown"  )
+# Product.create!(category_id:1 ,name: "Chillin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Brown/Images/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1635259489&h=384&q=60", price:500, color: "Brown" )
+# Product.create!(category_id:1 ,name: "Shy", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-UK-Vinyl-Figure-Brown/Images/KAWS-Holiday-UK-Vinyl-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411703&h=384&q=60", price:500 , color: "Brown")
+# Product.create!(category_id:1 ,name: "Lonely", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-SINGAPORE-Figure-Brown/Images/KAWS-HOLIDAY-SINGAPORE-Figure-Brown/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411720&h=384&q=60", price:500, color: "Brown" )#5
 
-Product.create!(category_id:1 ,name: "Companion", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Companion-2020-Figure-Grey/Images/KAWS-Companion-2020-Figure-Grey/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655490899&h=384&q=60", price: 500, color: "Grey")#1 Grey vinyl figurine 
-Product.create!(category_id:1 ,name: "Chillin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Grey/Images/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Grey/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1635187667&h=384&q=60", price: 500, color: "Grey")
-Product.create!(category_id:1 ,name: "Shy", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-UK-Vinyl-Figure-Grey/Images/KAWS-Holiday-UK-Vinyl-Figure-Grey/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411703&h=384&q=60", price: 500, color: "Grey")#3
-Product.create!(category_id:1 ,name: "Lonely", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-SINGAPORE-Figure-Grey/Images/KAWS-HOLIDAY-SINGAPORE-Figure-Grey/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1668014583&h=384&q=60", price: 500, color: "Grey")#4
-#PRODUCTS ART PRINTS 
-Product.create!(category_id:2 ,name: "Why", description: "Kaws x", image:"https://images.stockx.com/images/KAWS-Separated-Signed-Edition-of-250.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1646668035&q=60", price:6000, color: "Brown")
-Product.create!(category_id:2 ,name: "Promise", description: "Kaws x", image:"https://images.stockx.com/images/KAWS-THE-PROMISE-Print-Signed-Edition-of-500.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1669064633&q=60", price:6000, color: "Grey")
-Product.create!(category_id:2 ,name: "Share", description: "Kaws x", image:"https://images.stockx.com/images/KAWS-Share-Print-Signed-Edition-of-500.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1642527338&q=60", price:6000, color: "Black")
+# Product.create!(category_id:1 ,name: "Companion", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Companion-2020-Figure-Black/Images/KAWS-Companion-2020-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655490899&h=384&q=60", price:500 , color: "Black")#1 black vinyl figurines 
+# Product.create!(category_id:1 ,name: "Kin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-Changbai-Mountain-Vinyl-Figure-Black/Images/KAWS-Holiday-Changbai-Mountain-Vinyl-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1652820860&h=384&q=60", price:500, color: "Black" )
+# Product.create!(category_id:1 ,name: "Chillin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Black/Images/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1635178627&h=384&q=60", price: 500, color: "Black")# 3
+# Product.create!(category_id:1 ,name: "Shy", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-UK-Vinyl-Figure-Black/Images/KAWS-Holiday-UK-Vinyl-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411712&h=384&q=60", price: 500, color: "Black")
+# Product.create!(category_id:1 ,name: "Lonely", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-SINGAPORE-Figure-Black/Images/KAWS-HOLIDAY-SINGAPORE-Figure-Black/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411705&h=384&q=60", price:500 , color: "Black")#5
+
+# Product.create!(category_id:1 ,name: "Companion", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Companion-2020-Figure-Grey/Images/KAWS-Companion-2020-Figure-Grey/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655490899&h=384&q=60", price: 500, color: "Grey")#1 Grey vinyl figurine 
+# Product.create!(category_id:1 ,name: "Chillin", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Grey/Images/KAWS-HOLIDAY-JAPAN-Vinyl-Figure-Grey/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1635187667&h=384&q=60", price: 500, color: "Grey")
+# Product.create!(category_id:1 ,name: "Shy", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-Holiday-UK-Vinyl-Figure-Grey/Images/KAWS-Holiday-UK-Vinyl-Figure-Grey/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1655411703&h=384&q=60", price: 500, color: "Grey")#3
+# Product.create!(category_id:1 ,name: "Lonely", description: "Kaws x", image:"https://images.stockx.com/360/KAWS-HOLIDAY-SINGAPORE-Figure-Grey/Images/KAWS-HOLIDAY-SINGAPORE-Figure-Grey/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1668014583&h=384&q=60", price: 500, color: "Grey")#4
+# #PRODUCTS ART PRINTS 
+# Product.create!(category_id:2 ,name: "Why", description: "Kaws x", image:"https://images.stockx.com/images/KAWS-Separated-Signed-Edition-of-250.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1646668035&q=60", price:6000, color: "Brown")
+# Product.create!(category_id:2 ,name: "Promise", description: "Kaws x", image:"https://images.stockx.com/images/KAWS-THE-PROMISE-Print-Signed-Edition-of-500.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1669064633&q=60", price:6000, color: "Grey")
+# Product.create!(category_id:2 ,name: "Share", description: "Kaws x", image:"https://images.stockx.com/images/KAWS-Share-Print-Signed-Edition-of-500.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1642527338&q=60", price:6000, color: "Black")
+
+Product.create!(category_id:1 ,name: "Wonderland Potion", description: "Take a trip to Wonderland", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858278244417536/red.png?width=640&height=1067", price:50, color: "red")
+Product.create!(category_id:1 ,name: "Wonderland Potion", description: "Take a trip tp Wonderland", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858278244417536/red.png?width=640&height=1067", price:50, color: "red")
+Product.create!(category_id:1 ,name: "Wonderland Potion", description: "Take a trip to Wonderland ", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858278244417536/red.png?width=640&height=1067", price:50, color: "red")
+Product.create!(category_id:3 ,name: "Wonderland Potion", description: "Take a trip to Wonderland ", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858304114901022/purple.png?width=640&height=1067", price:50, color: "purple")
+Product.create!(category_id:3 ,name: "Wonderland Potion", description: "Take a trip to Wonderland ", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858304114901022/purple.png?width=640&height=1067", price:50, color: "purple")
+Product.create!(category_id:3 ,name: "Wonderland Potion", description: "Take a trip to Wonderland ", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858304114901022/purple.png?width=640&height=1067", price:50, color: "purple")
+Product.create!(category_id:2 ,name: "Wonderland Potion", description: "Take a trip to Wonderland ", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858278689034330/wonderland_drink_me_bottle__png_overlay__by_lewis4721_denzgt1-fullview.png?width=640&height=1067", price:50, color: "blue")
+Product.create!(category_id:2 ,name: "Wonderland Potion", description: "Take a trip to Wonderland ", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858278689034330/wonderland_drink_me_bottle__png_overlay__by_lewis4721_denzgt1-fullview.png?width=640&height=1067", price:50, color: "blue")
+Product.create!(category_id:2 ,name: "Wonderland Potion", description: "Take a trip to Wonderland ", image:"https://media.discordapp.net/attachments/1046571682279723089/1059858278689034330/wonderland_drink_me_bottle__png_overlay__by_lewis4721_denzgt1-fullview.png?width=640&height=1067", price:50, color: "blue")
+
+
 
 #User
-User.create!(first_name: "Teana", last_name: "Z", username: "Teana123", email: "Teanawk@gmail.com", password_digest: "z")#1 
+User.create!(first_name: "Teana", last_name: "Z", username: "Testing", email: "Teanawk@gmail.com", password_digest: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1fQ.Kh4uZyQCsf6v7s0-1xGE3FZ2TzupABX9XmqR-nq6rfs", is_admin: true)#1 
 
 #CART ITEM 
 CartItem.create!(product_id: 1, user_id:1)
